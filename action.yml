@@ -24,7 +24,7 @@ runs:
       env:
         GH_TOKEN: ${{ inputs.token }}
     # The base branch, for the review of a pull request with no perspica comment. Never the pull request's code.
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7.0.1
       if: github.event_name == 'pull_request_target'
       with:
         fetch-depth: 0
